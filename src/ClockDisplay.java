@@ -10,9 +10,6 @@ public class ClockDisplay {
 
 	public static int n=60;
 	public static ArrayList<String> names=new ArrayList<String>(n);
-	public static ArrayList<Character> charList=new ArrayList<Character>(60);
-	public static ArrayList<Character> minList=new ArrayList<Character>(60);
-	public static ArrayList<Character> hrList=new ArrayList<Character>(60);
 	
 	public static void initList(){
 		names.add("One");
@@ -170,11 +167,7 @@ public class ClockDisplay {
 
 	
 	public static void autosch(){
-		for(int i=0;i<60;i++){
-			charList.add('O');
-			minList.add('O');
-			hrList.add('O');
-		}
+	
 		while(true){
 			try{
 				for(int i=0;i<20;i++)
